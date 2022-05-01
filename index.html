@@ -463,6 +463,28 @@
             </li>
           </ul>
         </div>
+        <!--підписка на розсилку-->
+
+        <!--form class="mail-input">
+          <p class="input-text">ПОДПИШИТЕСЬ НА РОССЫЛКУ</p>
+
+          <div class="mail-input-div">
+            <label class="mail-input-label">
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="mail-input-bg"
+              />
+            </label>
+            <div class="input-btn">
+              <button class="footer-bg" type="submit">Подписаться</button>
+              <svg class="icon-input" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </div>
+          </div>
+        </form>-->
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -472,8 +494,47 @@
             <use href="./img/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+
+        <!--спливаюче вікно на "героєві"-->
+
+        <form class="windows-form">
+          <h2 class="form-text">Оставьте свои данные, мы вам перезвоним</h2>
+
+          <div class="form-element">
+            <label>Имя </label>
+            <input type="text" name="name" />
+          </div>
+
+          <div class="form-element">
+            <label>Телефон</label>
+            <input type="tel" name="tel" />
+          </div>
+
+          <div class="form-element">
+            <label>Пошта </label>
+            <input type="email" name="email" />
+          </div>
+
+          <div class="form-comment">
+            <label>Коментарий</label>
+            <textarea
+              name="comment"
+              id=""
+              rows=" "
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" name="" value="" />
+            <label>Соглашаюсь с рассылкой и принимаю Условия договора </label>
+          </div>
+
+          <button class="input-btn-modal" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>

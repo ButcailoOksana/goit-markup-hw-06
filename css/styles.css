@@ -551,6 +551,7 @@ header a{
 }
 .footer-icon{
     margin-left: 70px;
+    margin-right: 93px;
 }
 .footer-container{
     display: flex;
@@ -562,6 +563,77 @@ header a{
 
    background-color: var(--accent-color);
 }
+
+.input-text{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+    margin-bottom: 20px;
+}
+.mail-input{
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+}
+.mail-input-label{
+    display: inline-flex;
+    width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-color);
+}
+.mail-input-div{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding: 0;
+    justify-content: space-between;
+}
+.mail-input-bg{
+    width:100%;
+    padding: 0;
+    background-color: var(--background-color);
+    color:var(--hero-text-color);
+}
+.footer-bg{
+    width: 200px;
+    height: 50px;
+    background: var(--btn-second-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 62px 10px 29px;
+    margin-right: 0;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--hero-text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.input-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin-left: 12px;
+    margin:0 auto
+}
+.icon-input{
+    content: "";
+    position: absolute;
+    margin:13px 28px 13px 10px;
+    fill: var(--hero-text-color);
+    transform: translateX(148px);
+}
+
+
+
 /*Модальне вікно*/
 .backdrop{
     position: fixed;
@@ -586,6 +658,7 @@ header a{
 
     width: 528px;
     height: 581px;
+    
 
     background: var(--hero-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -613,6 +686,88 @@ header a{
     box-sizing: border-box;
     cursor: pointer;
 }
+.close-icon{
+    fill: var(--vector-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-icon:hover,
+.close-icon:focus{
+    fill: var(--accent-color);
+}
+
+
+/*внутрішнє оформлення модал вікна*/
+form{
+    padding-left: 41px;
+    padding-right: 39px;
+}
+.form-text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    
+    color: var(--title-text-color);
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    
+}
+.form-element input{
+padding: 11px;
+}
+.form-element label{
+    margin-bottom: 4px;
+}
+.form-comment{
+    display: flex;
+    flex-direction: column;
+    height: 138px;
+    margin-bottom: 20px;
+}
+.form-comment label{
+    margin-bottom: 4px;
+    color:var(--primary-text-color);
+}
+.form-comment ::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+}
+.form-comment textarea{
+    width: 448px;
+    height: auto;
+    resize: none;
+}
+
+.checkbox{
+    margin-bottom: 30px;
+}
+.input-btn-modal{
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 55px 10px 56px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-left: 124px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
  /*Портфоліо*/
 .portfolio-btn{
     font-family: 'Roboto',sans-serif;
