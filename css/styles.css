@@ -657,8 +657,6 @@ header a{
     transform: translate(-50%,-50%);
 
     width: 528px;
-    height: 581px;
-    
 
     background: var(--hero-text-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -711,6 +709,7 @@ form{
     margin-top: 40px;
     margin-bottom: 12px;
 }
+
 .form-element{
     position: relative;
     display: flex;
@@ -719,23 +718,41 @@ form{
     box-sizing: border-box;
     border-radius: 4px;
     color: var(--primary-text-color);
-    
+   
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-element input{
     padding: 11px 30px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 4px;
 }   
+
+.form-input:hover,
+.form-input:focus{
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
 
 .form-element label{
     margin-bottom: 4px;
 }
 .form-comment{
+   
     display: flex;
     flex-direction: column;
     height: 138px;
     margin-bottom: 20px;
 }
-.form-comment label{
-    margin-bottom: 4px;
+
+ label{
     color:var(--primary-text-color);
 }
 .form-comment ::placeholder{
@@ -745,11 +762,22 @@ form{
     width: 448px;
     height: auto;
     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .checkbox{
-    margin-bottom: 30px;
+   appearance: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+    cursor: pointer;
 }
+
 .input-btn-modal{
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -766,21 +794,25 @@ form{
     letter-spacing: 0.06em;
     color: #FFFFFF;
     margin-left: 124px;
-    margin-bottom: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
     cursor: pointer;
 }
 
 .form-icon{
     position: absolute;
-    margin-top: 30px;
+    top: 50%;
     margin-left: 12px;
     fill:var(--title-text-color);
     cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-icon:hover,
-.form-icon:focus{
+
+.form-input:hover~ .form-icon,
+.form-input:focus~ .form-icon{
     fill:var(--accent-color);
 }
+
 
  /*Портфоліо*/
 .portfolio-btn{
