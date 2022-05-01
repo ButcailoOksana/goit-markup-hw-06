@@ -497,32 +497,33 @@
 
         <!--спливаюче вікно на "героєві"-->
 
-        <form class="windows-form">
+        <form class="windows-form" autocomplete="off">
           <h2 class="form-text">Оставьте свои данные, мы вам перезвоним</h2>
 
-          <div class="form-element">
-            <label>Имя </label>
-            <input type="text" name="name" />
+          <label class="form-element form-name" for="name"
+            >Имя
+
+            <input class="form-input" type="text" name="name" />
             <svg class="form-icon" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-person-black-18dp"></use>
             </svg>
-          </div>
+          </label>
 
-          <div class="form-element">
-            <label>Телефон</label>
-            <input type="tel" name="tel" />
+          <label for="tel" class="form-element form-name"
+            >Телефон
+            <input class="form-input" type="tel" name="tel" />
             <svg class="form-icon" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
-          </div>
+          </label>
 
-          <div class="form-element">
-            <label>Пошта </label>
-            <input type="email" name="email" />
+          <label for="email" class="form-element form-name"
+            >Пошта
+            <input class="form-input" type="email" name="email" />
             <svg class="form-icon" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-email"></use>
             </svg>
-          </div>
+          </label>
 
           <div class="form-comment">
             <label>Коментарий</label>
@@ -534,10 +535,10 @@
             ></textarea>
           </div>
 
-          <div class="checkbox">
-            <input type="checkbox" name="" value="" />
-            <label>Соглашаюсь с рассылкой и принимаю Условия договора </label>
-          </div>
+          <label class="checkbox">
+            <input type="checkbox" name="" value="" checked />
+            Соглашаюсь с рассылкой и принимаю Условия договора
+          </label>
 
           <button class="input-btn-modal" type="submit">Отправить</button>
         </form>
