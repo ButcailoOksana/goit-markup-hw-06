@@ -712,6 +712,7 @@ form{
     margin-bottom: 12px;
 }
 .form-element{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -721,8 +722,9 @@ form{
     
 }
 .form-element input{
-padding: 11px;
-}
+    padding: 11px 30px;
+}   
+
 .form-element label{
     margin-bottom: 4px;
 }
@@ -764,8 +766,20 @@ padding: 11px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     margin-left: 124px;
-    margin-bottom: 40px;
+    margin-bottom: auto;
     cursor: pointer;
+}
+
+.form-icon{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 12px;
+    fill:var(--title-text-color);
+    cursor: pointer;
+}
+.form-icon:hover,
+.form-icon:focus{
+    fill:var(--accent-color);
 }
 
  /*Портфоліо*/
