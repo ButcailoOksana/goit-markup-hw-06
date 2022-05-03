@@ -468,29 +468,29 @@
 
         <!--підписка на розсилку-->
 
-        <div class="mail-input">
-          <p class="input-text">ПОДПИШИТЕСЬ НА РAССЫЛКУ</p>
-          <form class="input">
-            <ul class="input-list">
-              <li class="input-item">
+        <div class="mail-input-form">
+
+          <h2 class="input-title">ПОДПИШИТЕСЬ НА РAССЫЛКУ</h2>
+
+          <form class="input-form">
+            
               <label class="mail-input-label">
                 <input
                   type="email"
                   name="mail"
                   placeholder="E-mail"
-                  class="mail-input-bg"
+                  class="mail-input"
                 />
               </label>
-              </li>
-              <li class="input-item">
+             
+              
                 <button class="footer-bg" type="submit">Подписаться
-                  <svg class="icon-input" width="24" height="24">
+                  <svg class="icon-svg-footer" width="24" height="24">
                   <use href="./img/symbol-defs.svg#icon-send"></use>
                 </svg>
                 </button>
                 
-                </li>
-              </ul>
+                
          </div>
           </form>
         </div>
@@ -507,7 +507,7 @@
         <!--спливаюче вікно на "героєві"-->
 
         <form class="windows-form" autocomplete="off">
-          <h2 class="form-text">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
           <label class="form-element " for="name"
             >Имя
@@ -539,7 +539,7 @@
             <textarea
               class="textarea"
               name="comment"
-              id=""
+              id="comment"
               cols="30"
               rows="10"
               placeholder="Введите текст"
@@ -552,11 +552,12 @@
               type="checkbox"
               name=""
               value=""
-              
             />
-            <span class="box"></span>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="" class="box-link"> Условия договора</a>
+            <span class="box"> </span>
+            <svg class="checkbox-svg"><use href="./img/symbol-defs.svg#icon-check"></use></svg>
+
+            <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+            <a href="" class="box-link"> Условия договора</a></p>
           </label>
 
           <button class="input-btn-modal" type="submit">Отправить</button>
