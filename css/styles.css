@@ -574,7 +574,7 @@ header a{
     margin-left: 93px;
 }
 
-.input-title {
+.input-text{
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -585,6 +585,7 @@ header a{
 }
 .input-form{
     display: flex;
+    justify-content: flex-end;
 }
 
 .mail-input{
@@ -705,7 +706,6 @@ header a{
     text-align: center;
     
     color: var(--title-text-color);
-    margin-top: 40px;
     margin-bottom: 12px;
 }
 
