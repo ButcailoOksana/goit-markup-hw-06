@@ -768,13 +768,12 @@ header a{
 .textarea{
     width: 448px;
     height: 120px;
-    padding-left: 14px;
-    padding-top: 12px;
+    padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    margin-bottom: 20px;
     resize: none;
-    margin-top: 4px;
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -786,19 +785,12 @@ header a{
 }
 
 .checkbox{
-    position: relative;
     display: flex;
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 00.03em;
-    cursor: pointer;
-    color: var(--primary-text-color);
     margin-bottom: 30px;
 }
 .checkbox-input{
-   appearance: none;
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -809,16 +801,23 @@ header a{
     cursor: pointer;
     margin-right: 7px;
 }
-.box{
+
+.checkbox-input::before{
+    content: " ";
     display: inline-block;
-    width:16px;
+    width: 16px;
     height: 15px;
-    margin-left: -22px;
-    margin-top: 3px;
+    margin-right: 8.5px;
     border: 1px solid var(--vector-color);
-    border-radius: 2px;
-    
+    background-image: url(../img/icon.svg/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+
 }
+
+
 .checkbox-svg{
     position: absolute;
     width: 16px;
@@ -830,17 +829,10 @@ header a{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.checkbox-text{
-    margin-left: 7px;
-}
 
 
-.checkbox-input:checked + .box{
-    background-color: var(--accent-color);
-    background-image: url(../img/icon.svg/Vector.svg);
-    border: 1px solid var(--accent-color);
-   
-}
+
+
 .box-link{
     color: var(--accent-color);
 }
@@ -850,7 +842,7 @@ header a{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 55px 10px 56px;
-
+    border: 0;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
